@@ -1,15 +1,15 @@
 public class Sistema {
-    public String CI;
+    public int CI;
     public String nombres;
     public  String apellidos;
 
     public String materia;
 
-    public Sistema(String CI) {
+    public Sistema(int CI) {
         this.CI = CI;
     }
 
-    public String getCI() {
+    public int getCI() {
         return CI;
     }
 
@@ -30,13 +30,14 @@ public class Sistema {
         this.nombres = nombres;
     }
 
-    public void setCI(String CI) {
+    public void setCI(int CI) {
         this.CI = CI;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellidos(String apellidos){
+        this.apellidos=apellidos;
     }
+
 
     public void setMateria(String materia) {
         this.materia = materia;
@@ -57,6 +58,8 @@ public class Sistema {
     public void setNota2(int nota2) {
         this.nota2 = nota2;
     }
+
+
 
     public int nota1;
     public int nota2;
