@@ -4,14 +4,14 @@ public class Main {
   public static void main(String[] args) {
     Scanner leer = new Scanner(System.in);
 
-    Sistema[] estudiantes = new Sistema[5];
+    Sistema[] estudiantes = new Sistema[10];
 
     for (int i = 0; i < estudiantes.length; i++) {
       System.out.println("\nIngrese los datos del estudiante #" + (i + 1));
 
       System.out.print("Ingrese el CI del estudiante: ");
       int ci = leer.nextInt();
-      leer.nextLine(); // Consumir el salto de línea
+      leer.nextLine(); 
 
 
       Sistema estudiante = new Sistema(ci);
